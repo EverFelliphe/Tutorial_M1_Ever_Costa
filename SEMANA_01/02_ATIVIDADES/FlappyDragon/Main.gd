@@ -2,7 +2,7 @@ extends Node # instancia a classe Node2D
 
 var status = 1 # variavel de controle responsavel pela continuação do game, ou seja se o player perdeu ou não.
 var vscore = 0 #variavel responsavel por armazenar o score do player ao ultrapassar as colunas
-var x = 10 # variavel de controle referente ao eixo x do plano responsavel pelo movimento do cenario de fundo
+var x = 15 # variavel de controle referente ao eixo x do plano responsavel pelo movimento do cenario de fundo
 var y = 1.5 # variavel de controle referente ao eixo y do plano responsavel pela queda do dragão no inicio do game
 
 # executa essa função ao carregar o jogo
