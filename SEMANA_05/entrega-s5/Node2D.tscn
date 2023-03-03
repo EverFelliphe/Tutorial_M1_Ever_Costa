@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 62.0
+margin_top = 20.0
+margin_right = 420.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 450, 22 )
+text = "adicione um nome"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 63.0
+margin_top = 47.0
+margin_right = 276.0
+margin_bottom = 99.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 581.0
+margin_top = 52.0
+margin_right = 732.0
+margin_bottom = 103.0
+text = "confirmar nome"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 527.0
+margin_top = 235.0
+margin_right = 627.0
+margin_bottom = 276.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 124.0
+margin_top = 256.0
+margin_right = 236.0
+margin_bottom = 304.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 77.0
+margin_top = 129.0
+margin_right = 238.0
+margin_bottom = 172.0
+text = "gerar lista"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 363.0
+margin_top = 131.0
+margin_right = 502.0
+margin_bottom = 176.0
+text = "mudar nome"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 333.0
+margin_top = 52.0
+margin_right = 542.0
+margin_bottom = 99.0
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 336.0
+margin_top = 20.0
+margin_right = 694.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 450, 22 )
+text = "adicione um número "
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
