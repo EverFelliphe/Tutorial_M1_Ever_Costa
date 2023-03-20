@@ -20,12 +20,6 @@ func _physics_process(delta):
 
 	var move = Vector2.ZERO
 	move.y += gravity*delta
-#	if Input.is_action_just_pressed("ui_left") and Input.is_action_pressed("ui_up"):
-#		move.x =-1
-#		move.y = -1
-#	if Input.is_action_just_pressed("ui_right") and Input.is_action_pressed("ui_up"):
-#		move.x =+1
-#		move.y = -1
 	if Input.is_action_pressed("ui_left"):
 			move.x = -velocity
 			if Global.current_pers!= Global.personagem.jumping: 
